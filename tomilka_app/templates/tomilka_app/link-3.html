@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+   {% load staticfiles %}
+
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/style.css' %}" />
+ 
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="x-rim-auto-match" content="none">
+    <title>Томилка - свобода от кулинарных забот на природе</title>
+    <link rel="stylesheet" href="{% static 'fonts/stylesheet.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/bootstrap-grid.min.css' %}">
+    <link rel="stylesheet" href="{% static 'fancy/jquery.fancybox.min.js' %}" media="all">
+</head>
+
+<body>
+   
+    <header>
+        <div class="header-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-xl-3 logo">
+                        <img src="{% static 'images/logo.svg' %}" alt="">
+                        <p class="info">Томилка - свобода от кулинарных забот на природе! Печь, которая готовит сама!</p>
+                    </div>
+                    <div class="d-none d-xl-block col-xl-7">
+                        <ul>
+                            <li>
+                                <a href="index.html">Главная</a>
+                            </li>
+                            <li>
+                                <a href="link-1.html">Почему так вкусно</a>
+                            </li>
+                            <li>
+                                <a href="link-2.html">Здоровье</a>
+                            </li>
+                            <li>
+                                <a href="link-3.html">Модели и цены</a>
+                            </li>
+                            <li>
+                                <a href="link-4.html">Вопрос-ответ</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-sm-6 col-xl-2 phone">
+                        8 800 250 59 32 <br>
+                        <span>звонок по россии бесплатный</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        
+        <div class="models" id="modeli">
+            <div class="container pt pb">
+                <p class="title center">Выбирайте любую Томилку для отдыха с Вашими близкими и друзьями</p>
+                <div class="row">
+                    <div class="col-12 col-lg-4">
+                        <div class="models-item">
+                            <img src="{% static 'images/model-1.jpg' %}" alt="">
+                            <div class="row padding">
+                                <div class="col-4">
+                                    <img src="{% static 'images/model-icon-1.svg' %}" alt="">
+                                </div>
+                                <div class="col-8">
+                                    <span class="model-name">Томилка "Пикник"</span><br>
+                                    <span class="model-for">Для небольших посиделок</span>
+                                </div>
+                            </div>
+                            <div class="row padding models-desc">
+                                <p>
+                                    <span>Размеры</span> - Д-345 х Ш-205 х В-200 мм
+                                </p>
+                                <p>
+                                    <span>Вес:</span> 2.7 кг. <span>Накормит:</span> 2-4 человек
+                                </p>
+                            </div>
+                            <div class="row padding models-prices align-items-end justify-content-center">
+                                <span class="new-price">1999 руб.</span>
+                                <span class="old-price">2500 руб.</span>
+                                <p class="model-action">Цена снижена только до <span class="bold"><?=$rus_date?></span></p>
+                                <a href="#order-model" class="btn fancybox" data-id="481324">Забронировать цену</a>
+                                <p class="info">*Бронирование ни к чему вас не обязывает</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="models-item">
+                            <img src="{% static 'images/model-2.jpg' %}" alt="">
+                            <div class="row padding">
+                                <div class="col-4">
+                                    <img src="{% static 'images/model-icon-2.svg' %}" alt="">
+                                </div>
+                                <div class="col-8">
+                                    <span class="model-name">Томилка "Компания"</span><br>
+                                    <span class="model-for">Для большой компании</span>
+                                </div>
+                            </div>
+                            <div class="row padding models-desc">
+                                <p>
+                                    <span>Размеры</span> - Д-555 х Ш-305 х В-280 мм
+                                </p>
+                                <p>
+                                    <span>Вес:</span> 6.3 кг. <span>Накормит:</span> 6-12 человек
+                                </p>
+                            </div>
+                            <div class="row padding models-prices align-items-end justify-content-center">
+                                <span class="new-price">2499 руб.</span>
+                                <span class="old-price">3000 руб.</span>
+                                <p class="model-action">Цена снижена только до <span class="bold"><?=$rus_date?></span></p>
+                                <a href="#order-model" class="btn fancybox" data-id="481325">Забронировать цену</a>
+                                <p class="info">*Бронирование ни к чему вас не обязывает</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="models-item">
+                            <img src="{% static 'images/model-3.jpg' %}" alt="">
+                            <div class="row padding">
+                                <div class="col-4">
+                                    <img src="{% static 'images/model-icon-3.svg' %}" alt="">
+                                </div>
+                                <div class="col-8">
+                                    <span class="model-name">2 Томилки <br>по акции</span><br>
+                                    <span class="model-for">В подарок дорогому</span>
+                                </div>
+                            </div>
+                            <div class="row padding models-desc">
+                                <p>
+                                    Отлично подойдет в подарок на день рождения или другой праздник
+                                </p>
+                            </div>
+                            <div class="row padding models-prices align-items-end justify-content-center">
+                                <span class="new-price">2999 руб.</span>
+                                <span class="old-price">5000 руб.</span>
+                                <p class="model-action">Цена снижена только до <span class="bold"><?=$rus_date?></span></p>
+                                <a href="#order-model" class="btn fancybox" data-id="481326">Забронировать цену</a>
+                                <p class="info">*Бронирование ни к чему вас не обязывает</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+    
+    <footer>
+        <div class="container">
+            <div class="row justify-content-center footer-links">
+                <a class="d-block center" href="#">Доставка по всей России</a>
+                <a class="d-block center" href="#">Договор оферты</a>
+                <a class="d-block center" href="#">Политика конфиденциальности</a>
+            </div>
+            <div class="row justify-content-center">
+                <img class="requisites" src="{% static 'uploadupdate/ip-g.png' %}" alt="">
+            </div>
+            <div class="row justify-content-center">
+                <p class="info center">© 2019 "tomilka-official.ru" Все права защищены. Использование материалов разрешено только с согласия правообладателей. Полное или частичное копирование сайта запрещено и преследуется по закону.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="order-model" class="form-popup">
+        <div class="columns">
+            <div class="form-container">
+                <p class="modal-title">Заказать 
+                    <span class="name bold"></span> <br>
+                    <span class="red">с&nbsp;выгодой&nbsp;20%</span>
+                </p>
+                <form action="#" method="post" class="spnForm modal-form">
+                    <input type="hidden" name="id" value=""/>
+                    <input type="hidden" name="quantity" value="1"/>
+                    <input type="hidden" class="url" name="url"/>
+                    <input type="hidden" class="gmt" name="gmt"/>
+                    <input type="text" name="name" placeholder="Ваше имя">
+                    <input type="text" name="phone" placeholder="Ваш телефон">
+                    <input type="submit" value="Заказать по акции" class="btn">
+                    <p class="info">Мы свяжемся с Вами в течение 5 минут <br>и уточним детали доставки</p>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <link rel="stylesheet" href="{% static 'fancy/jquery.fancybox.min.css' %}">
+    <script src="https://yandex.st/jquery/3.1.0/jquery.min.js"></script>
+    <script src="{% static 'fancy/jquery.fancybox.min.js' %}"></script>
+    <script src="{% static 'scripts/custom.js' %}"></script>
+    <script src="{% static 'https://apispn.ru/js/jquery.form.min.js'%}"></script>
+	<script src='https://apispn.ru/js/jquery.spnform2.js'></script>
+	<script src='https://apispn.ru/js/jquery.spncall.js'></script>
+	<script src='https://apispn.ru/js/jquery.maskedinput.js'></script>
+
+
+</body>
+</html>

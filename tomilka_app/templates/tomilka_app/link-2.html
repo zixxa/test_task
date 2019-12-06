@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+   {% load staticfiles %}
+
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/style.css' %}" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="x-rim-auto-match" content="none">
+    <title>Томилка - свобода от кулинарных забот на природе</title>
+    <link rel="stylesheet" href="{% static 'fonts/stylesheet.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/bootstrap-grid.min.css' %}">
+    <link rel="stylesheet" href="{% static 'fancy/jquery.fancybox.min.js' %}" media="all">
+</head>
+
+<body>
+   
+    <header>
+        <div class="header-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-xl-3 logo">
+                        <img src="{% static 'images/logo.svg' %}" alt="">
+                        <p class="info">Томилка - свобода от кулинарных забот на природе! Печь, которая готовит сама!</p>
+                    </div>
+                    <div class="d-none d-xl-block col-xl-7">
+                        <ul>
+                            <li>
+                                <a href="index.html">Главная</a>
+                            </li>
+                            <li>
+                                <a href="link-1.html">Почему так вкусно</a>
+                            </li>
+                            <li>
+                                <a href="link-2.html">Здоровье</a>
+                            </li>
+                            <li>
+                                <a href="link-3.html">Модели и цены</a>
+                            </li>
+                            <li>
+                                <a href="link-4.html">Вопрос-ответ</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-sm-6 col-xl-2 phone">
+                        8 800 250 59 32 <br>
+                        <span>звонок по россии бесплатный</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        
+        <div class="food" id="zdorovie">
+            <div class="layer-back"></div>
+            <div class="container pt">
+                <div class="row">
+                    <p class="title">Готовьте то, что вам нравится без вреда для здоровья</p>
+                    <p class="subtitle">Томилка разработана так, что в ней можно готовить без масла. Наслаждайтесь здоровой пищей без канцерогенов!</p>
+                </div>
+                <div class="row layer-front">
+                    <div class="col-12 col-sm-6 col-md-3 food-item">
+                        <p>Без канцерогенов</p>
+                        <img src="{% static 'images/food-1.png'%}" alt="">
+                        <span>Тушеное мясо с грибами и овощами</span>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 food-item">
+                        <p>Еда не пригорает</p>
+                        <img src="{% static 'images/food-2.png'%}" alt="">
+                        <span>Лосось с картофелем</span>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 food-item">
+                        <p>Минимум холестерина</p>
+                        <img src="{% static 'images/food-3.png' %}" alt="">
+                        <span>Томленая телятина с овощами</span>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 food-item">
+                        <div class="info">
+                            "Блюда проходят особую термическую обработку и сохраняют все полезные вещества"
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="effect">
+            <div class="container">
+                <div class="row effect-images">
+                    <div class="col-6 col-sm-4 effect-item">
+                        <img src="{% static 'images/effect-img-1.png' %}" alt="">
+                        <img src="images/arrows_red.svg" alt="" class="effect_arrows d-none d-sm-block">
+                    </div>
+                    <div class="col-6 col-sm-4 effect-item">
+                        <img src="{% static 'images/effect-img-2.png' %}" alt="">
+                        <img src="{% static 'images/arrow_red.svg' %}" alt="" class="effect_arrow1 d-none d-sm-block">
+                        <img src="{% static 'images/arrow_red.svg' %}" alt="" class="effect_arrow2 d-none d-sm-block">
+                    </div>
+                    <div class="d-none d-sm-block col-sm-4">
+                        <img src="{% static 'images/effect-img-3.png' %}" alt="" class="effect-rotate">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+    
+    <footer>
+        <div class="container">
+            <div class="row justify-content-center footer-links">
+                <a class="d-block center" href="#">Доставка по всей России</a>
+                <a class="d-block center" href="#">Договор оферты</a>
+                <a class="d-block center" href="#">Политика конфиденциальности</a>
+            </div>
+            <div class="row justify-content-center">
+                <img class="requisites" src="uploadupdate/ip-g.png" alt="">
+            </div>
+            <div class="row justify-content-center">
+                <p class="info center">© 2019 "tomilka-official.ru" Все права защищены. Использование материалов разрешено только с согласия правообладателей. Полное или частичное копирование сайта запрещено и преследуется по закону.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <link rel="stylesheet" href="{% static 'fancy/jquery.fancybox.min.css' %}">
+    <script src="https://yandex.st/jquery/3.1.0/jquery.min.js"></script>
+    <script src="fancy/jquery.fancybox.min.js"></script>
+    <script src="scripts/custom.js"></script>
+    <script src='https://apispn.ru/js/jquery.form.min.js'></script>
+	<script src='https://apispn.ru/js/jquery.spnform2.js'></script>
+	<script src='https://apispn.ru/js/jquery.spncall.js'></script>
+	<script src='https://apispn.ru/js/jquery.maskedinput.js'></script>
+
+
+</body>
+</html>
