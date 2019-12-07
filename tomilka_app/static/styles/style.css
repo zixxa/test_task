@@ -1,7 +1,4 @@
-@font-face {
-    font-family: Museo Sans Cyrl 500; /* Имя шрифта */
-    src: url('..static/fonts/Museo-Sans-Cyrl-500.ttf' ); /* Путь к файлу со шрифтом */
-}
+
 body {
     margin: 0;
     padding: 0;

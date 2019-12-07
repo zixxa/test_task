@@ -28,21 +28,21 @@
                         <p class="info">Томилка - свобода от кулинарных забот на природе! Печь, которая готовит сама!</p>
                     </div>
                     <div class="d-none d-xl-block col-xl-7">
-                        <ul>
+                          <ul>
                             <li>
-                                <a href="index.html">Главная</a>
+                                <a href="/">Главная</a>
                             </li>
                             <li>
-                                <a href="link-1.html">Почему так вкусно</a>
+                                <a href="/whysotasty">Почему так вкусно</a>
                             </li>
                             <li>
-                                <a href="link-2.html">Здоровье</a>
+                                <a href="/health">Здоровье</a>
                             </li>
                             <li>
-                                <a href="link-3.html">Модели и цены</a>
+                                <a href="/types">Модели и цены</a>
                             </li>
                             <li>
-                                <a href="link-4.html">Вопрос-ответ</a>
+                                <a href="/qar">Вопрос-ответ</a>
                             </li>
                         </ul>
                     </div>
@@ -82,8 +82,8 @@
                                 </p>
                             </div>
                             <div class="row padding models-prices align-items-end justify-content-center">
-                                <span class="new-price">1999 руб.</span>
-                                <span class="old-price">2500 руб.</span>
+                                <span class="new-price">{{new_price_camping}}</span>
+                                <span class="old-price">{{old_price_camping}}</span>
                                 <p class="model-action">Цена снижена только до <span class="bold"><?=$rus_date?></span></p>
                                 <a href="#order-model" class="btn fancybox" data-id="481324">Забронировать цену</a>
                                 <p class="info">*Бронирование ни к чему вас не обязывает</p>
@@ -111,8 +111,8 @@
                                 </p>
                             </div>
                             <div class="row padding models-prices align-items-end justify-content-center">
-                                <span class="new-price">2499 руб.</span>
-                                <span class="old-price">3000 руб.</span>
+                                <span class="new-price">{{new_price_group}}</span>
+                                <span class="old-price">{{old_price_group}}</span>
                                 <p class="model-action">Цена снижена только до <span class="bold"><?=$rus_date?></span></p>
                                 <a href="#order-model" class="btn fancybox" data-id="481325">Забронировать цену</a>
                                 <p class="info">*Бронирование ни к чему вас не обязывает</p>
@@ -137,8 +137,8 @@
                                 </p>
                             </div>
                             <div class="row padding models-prices align-items-end justify-content-center">
-                                <span class="new-price">2999 руб.</span>
-                                <span class="old-price">5000 руб.</span>
+                                <span class="new-price">{{new_price_stock}}</span>
+                                <span class="old-price">{{old_price_stock}}</span>
                                 <p class="model-action">Цена снижена только до <span class="bold"><?=$rus_date?></span></p>
                                 <a href="#order-model" class="btn fancybox" data-id="481326">Забронировать цену</a>
                                 <p class="info">*Бронирование ни к чему вас не обязывает</p>
@@ -174,15 +174,17 @@
                     <span class="name bold"></span> <br>
                     <span class="red">с&nbsp;выгодой&nbsp;20%</span>
                 </p>
-                <form action="#" method="post" class="spnForm modal-form">
+                <form action="" method="post" class="spnForm modal-form">
                     <input type="hidden" name="id" value=""/>
                     <input type="hidden" name="quantity" value="1"/>
-                    <input type="hidden" class="url" name="url"/>
-                    <input type="hidden" class="gmt" name="gmt"/>
-                    <input type="text" name="name" placeholder="Ваше имя">
-                    <input type="text" name="phone" placeholder="Ваш телефон">
+                    <input type="hidden" class="url" name="url" />
+                    <input type="hidden" class="gmt" name="gmt" />
+                    <input type="text" name="name" placeholder="Ваше имя" value="{{form.name}}">
+                    <input type="text" name="phone" placeholder="Ваш телефон" value="{{form.phone}}">
                     <input type="submit" value="Заказать по акции" class="btn">
+                    {%csrf_token%}
                     <p class="info">Мы свяжемся с Вами в течение 5 минут <br>и уточним детали доставки</p>
+                    
                 </form>
             </div>
         </div>
