@@ -12,7 +12,6 @@ def health(request):
     return render(request, 'tomilka_app/link-2.html', {})
 
 def types (request):
-    form={}
     if request.POST:
         print (request.POST.get('name'), request.POST.get('phone'))
 
